@@ -14,7 +14,8 @@ exports.config = {
         './test/login.js',
         './test/comments.js',
         './test/logout.js',
-        './test/control-bar-functionality.js'
+        './test/control-bar-functionality.js',
+        './test/bug-report-page-control-bar.js'
     ],
 
     exclude: [
