@@ -162,7 +162,38 @@ module.exports = {
         textAlign: 'start',
         placeholder: ['Summary *','Steps to reproduce *','Actual result *','Expected result *','Attachment link',
                       'Assignee *','Priority *','Severity *','Repro *','Version']
+    },
 
+    bugList: {
+        bugSummaryTitle: 'Bug Summary',
+        bugPriorityTitle: 'Priority',
+        bugStatusTitle: 'Status',
+        bugReporterTitle: 'Reporter',
+        textAlignHeader: 'center',
+        fontSizeHeader: '16px',
+        fontWeightHeader: '700',
+        fontFamilyHeader: 'segoe ui',
+        fontColorHeader: '#212529',
+        textAlignSummary: 'left',
+        fontColorSummary: '#007bff',
+        fontWeightSummary: '400',
+        fontFamilySummary: 'segoe ui',
+        fontSizeSummary: '16px',
+        textAlignPriority: 'center',
+        fontColorPriority: '#212529',
+        fontWeightPriority: '400',
+        fontFamilyPriority: 'segoe ui',
+        fontSizePriority: '16px',
+        textAlignStatus: 'center',
+        fontColorStatus: '#212529',
+        fontWeightStatus: '400',
+        fontFamilyStatus: 'segoe ui',
+        fontSizeStatus: '16px',
+        textAlignReporter: 'center',
+        fontColorReporter: '#212529',
+        fontWeightReporter: '400',
+        fontFamilyReporter: 'segoe ui',
+        fontSizeReporter: '16px'
     },
 
         commentsModule: {

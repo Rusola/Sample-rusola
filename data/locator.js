@@ -91,6 +91,23 @@ module.exports = {
         bugTitleEmpty: 'span.text-left=Test. Empty comments bug report.'
     },
 
+    bugList: {
+        bodyBugList: '#bug_list_page',
+        headerTable: 'thead',
+        bodyTable: 'tbody tr',
+        bugSummaryTitle: '#bug_summary',
+        bugPriorityTitle: '#bug_priority',
+        bugStatusTitle: '#bug_status',
+        bugReporterTitle: '#bug_reporter',
+        titleTable: '.table thead p',
+        fontfamilyTitle: '.font-segoe-ui',
+        textSummary: '.btn-link',
+        textPriority: 'tbody #priority',
+        textStatus: 'tbody #status',
+        textReporter: 'tbody #reporter'
+
+    },
+
   bugReportEditMode: {
     input: '#summary',
     inputActRes: '#actual',
