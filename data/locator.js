@@ -108,67 +108,67 @@ module.exports = {
 
     },
 
-  bugReportEditMode: {
-    input: '#summary',
-    inputActRes: '#actual',
-    inputExpRes: '#expected',
-    inputAtach: '#attachment',
-    btnAllIssues: '#all_issues',
-    btnEdit: '#edit',
-    bugTitle: '#bug',
-    txtArea: '#str',
-    reporter: '.text-gray'
-  },
+    bugReportEditMode: {
+        input: '#summary',
+        inputActRes: '#actual',
+        inputExpRes: '#expected',
+        inputAtach: '#attachment',
+        btnAllIssues: '#all_issues',
+        btnEdit: '#edit',
+        bugTitle: '#bug',
+        txtArea: '#str',
+        reporter: '.text-gray'
+    },
 
-  loginPage: {
-    email: '#email',
-    password: '#pass',
-    loginButton: '#login',
-    errorMessage: '.alert-danger',
-    registrationButton: '#registration'
-  },
+    loginPage: {
+        email: '#email',
+        password: '#pass',
+        loginButton: '#login',
+        errorMessage: '.alert-danger',
+        registrationButton: '#registration'
+    },
 
-  registrationPage : {
-    firstName: '#fname',
-    lastName: '#lname',
-    errorMessage: '.alert-danger',
-    registerButton: '#registration'
-  },
+    registrationPage: {
+        firstName: '#fname',
+        lastName: '#lname',
+        errorMessage: '.alert-danger',
+        registerButton: '#registration'
+    },
 
     globalFooter: {
         footer: '.custom-footer',
         footerText: 'body .custom-footer',
     },
 
-  bugReportFormDisabledState: {
-    titleFont: '.text-bold=Summary:',
-    valueFont: 'span.text-gray=Medium',
-    email: '#email',
-    password: '#pass',
-    loginButton: '#login',
-    allIssues: '#all_issues',
-    bugSummary: 'tbody span'
-  },
+    bugReportFormDisabledState: {
+        titleFont: '.text-bold=Summary:',
+        valueFont: 'span.text-gray=Medium',
+        email: '#email',
+        password: '#pass',
+        loginButton: '#login',
+        allIssues: '#all_issues',
+        bugSummary: 'tbody span'
+    },
 
-  bugReportTitles: {
-    summary: '#summary_title',
-    stepsToRep: '#str_title',
-    actRes: '#actual_title',
-    expRes: '#expected=title',
-    attach: '#attach_title',
-    assignee: '#assignee_title',
-    reporter: '#reporter_title',
-    version: '#version_title',
-    priority: '#priority_title',
-    severity: '#severity_value',
-    repro: '#repro_title',
-    comments: '#comments_title',
-    allIssuesBtn: '#all_issues',
-    btn: '#edit',
-    bugTitle: '#summary',
-    txtArea: '#str',
-    registerButton: '#registration'
-  },
+    bugReportTitles: {
+        summary: '#summary_title',
+        stepsToRep: '#str_title',
+        actRes: '#actual_title',
+        expRes: '#expected=title',
+        attach: '#attach_title',
+        assignee: '#assignee_title',
+        reporter: '#reporter_title',
+        version: '#version_title',
+        priority: '#priority_title',
+        severity: '#severity_value',
+        repro: '#repro_title',
+        comments: '#comments_title',
+        allIssuesBtn: '#all_issues',
+        btn: '#edit',
+        bugTitle: '#summary',
+        txtArea: '#str',
+        registerButton: '#registration'
+    },
 
     logout: {
         loginButton: '#login',

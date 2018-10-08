@@ -23,7 +23,7 @@ module.exports = {
         emailFieldFontFamily: "segoe ui",
         emailFieldFontColor: "#495057",
         emailFieldFocusColor: "#80bdff",
-        
+
         loginButtonFontSize: "16px",
         loginButtonFontWeight: "400",
         loginButtonFontFamily: "segoe ui",
@@ -77,30 +77,30 @@ module.exports = {
         fontColorValue: "rgba(0,0,0,0.49)"
     },
 
-  bugReportEditMode: {
-    tagInput: 'input',
-    fontSize: '16px',
-    fontColor: 'rgba(73,80,87,1)',
-    textAlign: 'start',
-    fontFamily: 'segoe ui',
-    fontWeight: '400',
-    tagTextArea: 'textarea',
-    tagSpan: 'span',
-    summaryArray: [
-      'Summary:',
-      'Steps to Reproduce:',
-      'Actual Result:',
-      'Expected result:',
-      'Attachment:',
-      'Assignee:',
-      'Reporter:',
-      'Version:',
-      'Priority:',
-      'Severity:',
-      'Repro:',
-      'Comments:'
-    ]
-  },
+    bugReportEditMode: {
+        tagInput: 'input',
+        fontSize: '16px',
+        fontColor: 'rgba(73,80,87,1)',
+        textAlign: 'start',
+        fontFamily: 'segoe ui',
+        fontWeight: '400',
+        tagTextArea: 'textarea',
+        tagSpan: 'span',
+        summaryArray: [
+            'Summary:',
+            'Steps to Reproduce:',
+            'Actual Result:',
+            'Expected result:',
+            'Attachment:',
+            'Assignee:',
+            'Reporter:',
+            'Version:',
+            'Priority:',
+            'Severity:',
+            'Repro:',
+            'Comments:'
+        ]
+    },
 
     registrationPageFunctionality: {
         firstNameMinLength: 1,
@@ -143,16 +143,16 @@ module.exports = {
         fontColor: "#212529"
     },
 
-  bugReportFormDisabledState: {
-    fontWeight: "700",
-    fontFamily: "segoe ui",
-    fontSize: "16px",
-    fontColor: "rgba(33,37,41,1)",
-    fontWeightValue: "400",
-    fontFamilyValue: "segoe ui",
-    fontSizeValue: "16px",
-    fontColorValue: "rgba(0,0,0,0.49)"
-  },
+    bugReportFormDisabledState: {
+        fontWeight: "700",
+        fontFamily: "segoe ui",
+        fontSize: "16px",
+        fontColor: "rgba(33,37,41,1)",
+        fontWeightValue: "400",
+        fontFamilyValue: "segoe ui",
+        fontSizeValue: "16px",
+        fontColorValue: "rgba(0,0,0,0.49)"
+    },
 
     newBugReportPage: {
         fontFamily: 'segoe ui',
@@ -160,8 +160,8 @@ module.exports = {
         fontWeight: '400',
         fontColor: 'rgba(73,80,87,1)',
         textAlign: 'start',
-        placeholder: ['Summary *','Steps to reproduce *','Actual result *','Expected result *','Attachment link',
-                      'Assignee *','Priority *','Severity *','Repro *','Version']
+        placeholder: ['Summary *', 'Steps to reproduce *', 'Actual result *', 'Expected result *', 'Attachment link',
+            'Assignee *', 'Priority *', 'Severity *', 'Repro *', 'Version']
     },
 
     bugList: {
@@ -196,7 +196,7 @@ module.exports = {
         fontSizeReporter: '16px'
     },
 
-        commentsModule: {
+    commentsModule: {
         fontFamily: 'segoe ui',
         fontSize: '16px',
         fontWeight: '400',
