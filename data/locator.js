@@ -87,6 +87,36 @@ module.exports = {
     reporter: '.text-gray'
   },
 
+  loginPage: {
+    email: '#email',
+    password: '#pass',
+    loginButton: '#login',
+    errorMessage: '.alert-danger',
+    registrationButton: '#registration'
+  },
+
+  registrationPage : {
+    firstName: '#fname',
+    lastName: '#lname',
+    errorMessage: '.alert-danger',
+    registerButton: '#registration'
+  },
+
+    globalFooter: {
+        footer: '.custom-footer',
+        footerText: 'body .custom-footer',
+    },
+
+  bugReportFormDisabledState: {
+    titleFont: '.text-bold=Summary:',
+    valueFont: 'span.text-gray=Medium',
+    email: '#email',
+    password: '#pass',
+    loginButton: '#login',
+    allIssues: '#all_issues',
+    bugSummary: 'tbody span'
+  },
+
   bugReportTitles: {
     summary: '#summary_title',
     stepsToRep: '#str_title',
@@ -114,4 +144,3 @@ module.exports = {
     }
 
 };
-
