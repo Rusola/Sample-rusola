@@ -75,6 +75,22 @@ module.exports = {
         bugSummary: 'tbody span'
     },
 
+    commentsModule: {
+        input: '#summary',
+        inputActRes: '#actual',
+        allIssuesBtn: '#all_issues',
+        btn: '.btn-primary.btn-block',
+        btnAdd: '.btn.mt-2',
+        bugTitle: 'span.text-left=Register button has wrong text',
+        txtArea: '#str',
+        commentsTitle: '#comments_title',
+        registerButton: '#registration',
+        newCommentsTextArea: '#new_comment',
+        comments: '#comments',
+        noComments: '#no_comments',
+        bugTitleEmpty: 'span.text-left=Test. Empty comments bug report.'
+    },
+
   bugReportEditMode: {
     input: '#summary',
     inputActRes: '#actual',
