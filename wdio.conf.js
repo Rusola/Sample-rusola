@@ -11,7 +11,8 @@ exports.config = {
     './test/new-bug-report-page.js',
     './test/bug-report-form-disabled-state.js',
     './test/login.js',
-    './test/comments.js'
+    './test/comments.js',
+    './test/logout.js'
   ],
 
   exclude: [

@@ -75,16 +75,6 @@ module.exports = {
         bugSummary: 'tbody span'
     },
 
-    bugReportEditMode: {
-        input: '#summary',
-        inputActRes: '#actual',
-        allIssuesBtn: '#all_issues',
-        btn: '.btn-primary.btn-block',
-        bugTitle: 'span.text-left=Register button has wrong text',
-        txtArea: '#str',
-        registerButton: '#registration'
-    },
-
     commentsModule: {
         input: '#summary',
         inputActRes: '#actual',
@@ -99,8 +89,74 @@ module.exports = {
         comments: '#comments',
         noComments: '#no_comments',
         bugTitleEmpty: 'span.text-left=Test. Empty comments bug report.'
+    },
 
+  bugReportEditMode: {
+    input: '#summary',
+    inputActRes: '#actual',
+    inputExpRes: '#expected',
+    inputAtach: '#attachment',
+    btnAllIssues: '#all_issues',
+    btnEdit: '#edit',
+    bugTitle: '#bug',
+    txtArea: '#str',
+    reporter: '.text-gray'
+  },
+
+  loginPage: {
+    email: '#email',
+    password: '#pass',
+    loginButton: '#login',
+    errorMessage: '.alert-danger',
+    registrationButton: '#registration'
+  },
+
+  registrationPage : {
+    firstName: '#fname',
+    lastName: '#lname',
+    errorMessage: '.alert-danger',
+    registerButton: '#registration'
+  },
+
+    globalFooter: {
+        footer: '.custom-footer',
+        footerText: 'body .custom-footer',
+    },
+
+  bugReportFormDisabledState: {
+    titleFont: '.text-bold=Summary:',
+    valueFont: 'span.text-gray=Medium',
+    email: '#email',
+    password: '#pass',
+    loginButton: '#login',
+    allIssues: '#all_issues',
+    bugSummary: 'tbody span'
+  },
+
+  bugReportTitles: {
+    summary: '#summary_title',
+    stepsToRep: '#str_title',
+    actRes: '#actual_title',
+    expRes: '#expected=title',
+    attach: '#attach_title',
+    assignee: '#assignee_title',
+    reporter: '#reporter_title',
+    version: '#version_title',
+    priority: '#priority_title',
+    severity: '#severity_value',
+    repro: '#repro_title',
+    comments: '#comments_title',
+    allIssuesBtn: '#all_issues',
+    btn: '#edit',
+    bugTitle: '#summary',
+    txtArea: '#str',
+    registerButton: '#registration'
+  },
+
+    logout: {
+        loginButton: '#login',
+        bugReportForm: '#bug-form',
+        logoutButton: '#logout',
     }
+
 };
-
-

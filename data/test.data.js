@@ -77,19 +77,30 @@ module.exports = {
         fontColorValue: "rgba(0,0,0,0.49)"
     },
 
-    bugReportEditMode: {
-        tagInput: 'input',
-        fontSize: '16px',
-        fontColor: 'rgba(73,80,87,1)',
-        textAlign: 'start',
-        fontFamily: 'segoe ui',
-        fontWeight: '400',
-        tagTextArea: 'textarea',
-        summaryArray: [
-            'Summary:',
-            'Steps to Reproduce:'
-        ]
-    },
+  bugReportEditMode: {
+    tagInput: 'input',
+    fontSize: '16px',
+    fontColor: 'rgba(73,80,87,1)',
+    textAlign: 'start',
+    fontFamily: 'segoe ui',
+    fontWeight: '400',
+    tagTextArea: 'textarea',
+    tagSpan: 'span',
+    summaryArray: [
+      'Summary:',
+      'Steps to Reproduce:',
+      'Actual Result:',
+      'Expected result:',
+      'Attachment:',
+      'Assignee:',
+      'Reporter:',
+      'Version:',
+      'Priority:',
+      'Severity:',
+      'Repro:',
+      'Comments:'
+    ]
+  },
 
     registrationPageFunctionality: {
         firstNameMinLength: 1,
@@ -132,6 +143,17 @@ module.exports = {
         fontColor: "#212529"
     },
 
+  bugReportFormDisabledState: {
+    fontWeight: "700",
+    fontFamily: "segoe ui",
+    fontSize: "16px",
+    fontColor: "rgba(33,37,41,1)",
+    fontWeightValue: "400",
+    fontFamilyValue: "segoe ui",
+    fontSizeValue: "16px",
+    fontColorValue: "rgba(0,0,0,0.49)"
+  },
+
     newBugReportPage: {
         fontFamily: 'segoe ui',
         fontSize: '16px',
@@ -155,5 +177,3 @@ module.exports = {
     }
 
 };
-
-
