@@ -105,6 +105,13 @@ module.exports = {
     bugTitle: '#summary',
     txtArea: '#str',
     registerButton: '#registration'
-  }
+  },
+
+    logout: {
+        loginButton: '#login',
+        bugReportForm: '#bug-form',
+        logoutButton: '#logout',
+    }
+
 };
 
