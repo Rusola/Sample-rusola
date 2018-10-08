@@ -14,7 +14,7 @@ describe('bug-report-form-edit-mode', function () {
     it(`Page has the same titles as in Default State`, function () {
 
       browser.url('/');
-      browser.waitForVisible(locator3.email,7000);
+      browser.waitForVisible(locator3.email,15000);
       browser.setValue(locator3.email,'tester@test.com');
       browser.setValue(locator3.password,'test');
       browser.click(locator3.loginButton);
@@ -83,7 +83,7 @@ describe('bug-report-form-edit-mode', function () {
         }
       }
 
-      assert.equal(statValDefCompired.sort().filter(word => word != '').join(', '), inputValueEdit.sort().join(', '), 'Static text in default state != Input values in Edit Mode');
+      assert.equal(statValDefCompired.sort().filter(word => word != '').join(', '), inputValueEdit.sort().filter(word => word != '').join(', '), 'Static text in default state != Input values in Edit Mode');
     });
 
 
@@ -319,10 +319,4 @@ describe('bug-report-form-edit-mode', function () {
     });
   });
 });
-// for (let i in data.summaryArray) {
-//     it(`Title - ${data.summaryArray[i]}`, function () {
-//         let title = $$('.text-bold')[i].getText();
-//         console.log(title);
-//         assert.isTrue(true);
-//     });
-// }
+
