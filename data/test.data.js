@@ -207,6 +207,10 @@ module.exports = {
         textAlign: 'left',
         commTitle: 'Comments:',
         noCommentsTitle: 'No comments'
-    }
+    },
 
+    controlBarFunctionality: {
+        editButtonName: 'Edit',
+        submitButtonName: 'Submit'
+    }
 };

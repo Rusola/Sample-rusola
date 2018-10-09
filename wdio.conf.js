@@ -1,5 +1,5 @@
 exports.config = {
-
+ 
     specs: [
         './test/client.js',
         './test/global-header.js',
@@ -13,7 +13,8 @@ exports.config = {
         './test/bug-list.js',
         './test/login.js',
         './test/comments.js',
-        './test/logout.js'
+        './test/logout.js',
+        './test/control-bar-functionality.js'
     ],
 
     exclude: [
