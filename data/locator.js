@@ -47,14 +47,15 @@ module.exports = {
         versionDropDownPlaceHolder: '#version .Dropdown-placeholder',
         requiredFieldText: '.text-sm-left'
     },
-
+    
     navigationBar: {
         newBugButton: '#new_bug',
         allIssuesButton: '#all_issues',
         logoutButton: '#logout',
         navigetionBar: '[class="card-footer text-center mb-3"] .input-group-append',
         cardFooter: '.card-footer',
-        submitButton: '#todo_add'
+        submitButton: '#bug_add',
+        issuesTable: '.table'
     },
 
     globalFooter: {
