@@ -37,7 +37,6 @@ describe(`Titles`, function () {
 
     it('Values are displayed as a static text', function () {
         let tagName = browser.getTagName(locator.valueFont);
-        console.log(tagName);
         assert.equal(tagName, 'span', 'Values are not displayed as a static text');
     });
 });
