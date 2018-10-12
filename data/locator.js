@@ -34,12 +34,12 @@ module.exports = {
     },
 
   bugReportFormDisabledState: {
-    titleFont: '#summary_title', //'.text-bold=Summary:',
-    valueFont: '#summary_value', //'span.text-gray=Medium',
+    titleFont: '#summary_title',
+    valueFont: '#summary_value',
     email: '#email',
     password: '#pass',
     loginButton: '#login',
     allIssues: '#all_issues',
-    bugSummary: '#summary'//'tbody span'
+    bugSummary: '#summary'
   }
 };
