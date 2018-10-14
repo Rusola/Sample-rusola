@@ -77,8 +77,8 @@ describe('Bug Report Disabled State', function () {
             browser.click(locator.loginButton);
             browser.waitForVisible(locator.allIssues, 1000);
             browser.click(locator.allIssues);
-            browser.waitForVisible(locator.chooseBug, 1000);
-            browser.click(locator.chooseBug);
+            browser.waitForVisible(locator.bugTitle, 3000);
+            $$('#summary')[1].click();
             browser.waitForVisible(locator.bugReportDisbForm, 1000);
             browser.pause(1000);
 
@@ -109,24 +109,25 @@ describe('Bug Report Disabled State', function () {
     describe('Steps to Reproduce', function () {
 
         it('Verify that value displayed as multiline text area', function () {
-            let rowNum = Number(browser.getAttribute(locator.textArea, 'rows')[0]);
+            let rowNum = Number(browser.getAttribute(locator.textArea, 'rows'));
+            console.log(rowNum);
             assert.isAtLeast(rowNum, data.minRowReq);
         });
 
         it('Verify that Background-color is equal to data.backColorSteps', function () {
-            let backColor = browser.getCssProperty(locator.textArea, 'background-color')[0].value;
+            let backColor = browser.getCssProperty(locator.textArea, 'background-color').value;
             assert.equal(backColor, data.backColorSteps, 'Background Color is Incorrect');
         });
 
         it('Verify that width is equal to widthText', function () {
             let siteWidth = browser.getElementSize('.container.font-segoe-ui', 'width') - 30; //remove padding -30
-            let widthText = Number(browser.getCssProperty(locator.textArea, 'width')[0].value.slice(0, -2)); //remove px and convert to num
+            let widthText = Number(browser.getCssProperty(locator.textArea, 'width').value.slice(0, -2)); //remove px and convert to num
             assert.equal(widthText, siteWidth, 'Width of textbox is Incorrect');
             //console.log(siteWidth);
         });
 
         it('Verify that Border-color is equal to data.borderColor', function () {
-            let borderColor = browser.getCssProperty(locator.textArea, 'border-color')[0].value;
+            let borderColor = browser.getCssProperty(locator.textArea, 'border-color').value;
             assert.equal(borderColor, data.borderColor, 'Incorrect Border Color');
         });
 

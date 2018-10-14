@@ -64,10 +64,10 @@ module.exports = {
     },
 
     bugReportFormDisabledState: {
-        chooseBug: 'span.text-left=Wrong text in Global Footer',
+        bugTitle: '#bug',
         bugReportDisbForm: '.badge',
-        attachment: 'a',
-        textArea: '.text-area',
+        attachment: '#attach_link',
+        textArea: '#str_value',
         titleFont: '#summary_title',
         valueFont: '#summary_value',
         email: '#email',
@@ -140,16 +140,6 @@ module.exports = {
     globalFooter: {
         footer: '.custom-footer',
         footerText: 'body .custom-footer',
-    },
-
-    bugReportFormDisabledState: {
-        titleFont: '.text-bold=Summary:',
-        valueFont: 'span.text-gray=Medium',
-        email: '#email',
-        password: '#pass',
-        loginButton: '#login',
-        allIssues: '#all_issues',
-        bugSummary: 'tbody span'
     },
 
     bugReportTitles: {
