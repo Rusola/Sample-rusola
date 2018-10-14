@@ -110,7 +110,6 @@ describe('Bug Report Disabled State', function () {
 
         it('Verify that value displayed as multiline text area', function () {
             let rowNum = Number(browser.getAttribute(locator.textArea, 'rows'));
-            console.log(rowNum);
             assert.isAtLeast(rowNum, data.minRowReq);
         });
 
@@ -123,7 +122,6 @@ describe('Bug Report Disabled State', function () {
             let siteWidth = browser.getElementSize('.container.font-segoe-ui', 'width') - 30; //remove padding -30
             let widthText = Number(browser.getCssProperty(locator.textArea, 'width').value.slice(0, -2)); //remove px and convert to num
             assert.equal(widthText, siteWidth, 'Width of textbox is Incorrect');
-            //console.log(siteWidth);
         });
 
         it('Verify that Border-color is equal to data.borderColor', function () {
