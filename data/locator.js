@@ -47,7 +47,7 @@ module.exports = {
         versionDropDownPlaceHolder: '#version .Dropdown-placeholder',
         requiredFieldText: '.text-sm-left'
     },
-    
+
     navigationBar: {
         newBugButton: '#new_bug',
         allIssuesButton: '#all_issues',
@@ -68,13 +68,13 @@ module.exports = {
         bugReportDisbForm: '.badge',
         attachment: 'a',
         textArea: '.text-area',
-        titleFont: '.text-bold=Summary:',
-        valueFont: 'span.text-gray=Medium',
+        titleFont: '#summary_title',
+        valueFont: '#summary_value',
         email: '#email',
         password: '#pass',
         loginButton: '#login',
         allIssues: '#all_issues',
-        bugSummary: 'tbody span'
+        bugSummary: '#summary'
     },
 
     commentsModule: {
@@ -177,7 +177,7 @@ module.exports = {
         bugReportForm: '#bug-form',
         logoutButton: '#logout',
     },
-  
+
     controlBarFunctionality: {
         bugReportFormDisabled: '#bug_report_disabled',
         bugReportFormEdit: '#edit-mode-form',
