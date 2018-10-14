@@ -1,59 +1,69 @@
 const assert = require('chai').assert;
 const data = require('../data/test.data');
 const locator = require('../data/locator');
+const controlBarData = require('../data/test.data').bugReportPageControlBar;
+const controlBarLocator = require('../data/locator').controlBarFunctionality;
 
 describe('Created Bug Report Page Control Bar', function () {
-    describe('Active cancel button', function () {
-        it(`font family is ${data.bugReportPageControlBar.btnFontFamily}`, function () {
-            function goToBugReportPage() {
-                browser.url('/');
-                browser.waitForVisible(locator.loginPage.email, 2000);
-                browser.setValue(locator.loginPage.email, data.user.email);
-                browser.setValue(locator.loginPage.password, data.user.password);
-                browser.click(locator.loginPage.loginButton);
-                browser.waitForVisible(locator.bugReportEditMode.allIssuesBtn, 2000);
-                browser.click(locator.bugReportEditMode.allIssuesBtn);
 
-                browser.waitForExist(locator.newBugReportPage.summaryField);
-                browser.click(locator.newBugReportPage.summaryField);
+    describe('Edit Mode', function () {
 
-                // browser.waitForExist('#summary');
-                // $$('#summary')[0].click();
-                //browser.waitForExist(locator.controlBarFunctionality.bugReportFormDisabled, 2000);
-            }
-
-            function switchToEditMode() {
-                //$(locator.controlBarFunctionality.editBtn).click();
-                browser.click(locator.controlBarFunctionality.editBtn);
-                //browser.waitForVisible(locator.controlBarFunctionality.bugReportFormEdit, 2000);
-
-                //browser.waitForVisible(locator.bugReportFormDisabledState.btn, 2000);
-            }
-
-            goToBugReportPage();
-            switchToEditMode();
-            let fontFamily = browser.getCssProperty(locator.controlBarFunctionality.cancelBtnEdit, 'font-family').value;
-            assert.equal(fontFamily, data.bugReportPageControlBar.btnFontFamily, 'Cancel button font family is incorrect');
+        before(function () {
+            browser.url('/');
+            browser.waitForVisible(locator.loginPage.email, 2000);
+            browser.setValue(locator.loginPage.email, data.user.email);
+            browser.setValue(locator.loginPage.password, data.user.password);
+            browser.click(locator.loginPage.loginButton);
+            browser.waitForVisible(locator.bugReportEditMode.allIssuesBtn, 2000);
+            browser.click(locator.bugReportEditMode.allIssuesBtn);
+            browser.waitForExist(locator.newBugReportPage.summaryField);
+            browser.click(locator.newBugReportPage.summaryField);
+            browser.click(controlBarLocator.editBtn);
         });
 
-        it(`font size is ${data.bugReportPageControlBar.btnFontSize}`, function () {
-            let fontSize = browser.getCssProperty(locator.controlBarFunctionality.cancelBtnEdit, 'font-size').value;
-            assert.equal(fontSize, data.bugReportPageControlBar.btnFontSize, 'Cancel button font size is incorrect');
-        });
+        describe('Active cancel button', function () {
 
-        it(`font weight is ${data.bugReportPageControlBar.btnFontWeight}`, function () {
-            let fontWeight = browser.getCssProperty(locator.controlBarFunctionality.cancelBtnEdit, 'font-weight').value;
-            assert.equal(fontWeight, data.bugReportPageControlBar.btnFontWeight, 'Cancel button font weight is incorrect');
-        });
+            it(`background color is ${controlBarData.cancelBtnBackgroundColor}`, function () {
+                const backgroundColor = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'background-color').parsed.hex;
+                assert.equal(backgroundColor, controlBarData.cancelBtnBackgroundColor, 'Cancel button background color is incorrect');
+            });
 
-        it(`font color is ${data.bugReportPageControlBar.btnFontColor}`, function () {
-            let fontColor = browser.getCssProperty(locator.controlBarFunctionality.cancelBtnEdit, 'color').parsed.hex;
-            assert.equal(fontColor, data.bugReportPageControlBar.btnFontColor, 'Cancel button color is incorrect');
-        });
+            it(`font family is ${controlBarData.btnFontFamily}`, function () {
+                const fontFamily = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'font-family').value;
+                assert.equal(fontFamily, controlBarData.btnFontFamily, 'Cancel button font family is incorrect');
+            });
 
-        it(`text is aligned to the ${data.bugReportPageControlBar.btnTextAlign}`, function () {
-            let align = browser.getCssProperty(locator.controlBarFunctionality.cancelBtnEdit, 'text-align').value;
-            assert.equal(align, data.bugReportPageControlBar.btnTextAlign, 'Cancel button text is not aligned to the ${data.bugReportPageControlBar.btnTextAlign}');
-        });
+            it(`font size is ${controlBarData.btnFontSize}`, function () {
+                const fontSize = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'font-size').value;
+                assert.equal(fontSize, controlBarData.btnFontSize, 'Cancel button font size is incorrect');
+            });
+
+            it(`font weight is ${controlBarData.btnFontWeight}`, function () {
+                const fontWeight = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'font-weight').value;
+                assert.equal(fontWeight, controlBarData.btnFontWeight, 'Cancel button font weight is incorrect');
+            });
+
+            it(`font color is ${controlBarData.btnFontColor}`, function () {
+                const fontColor = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'color').parsed.hex;
+                assert.equal(fontColor, controlBarData.btnFontColor, 'Cancel button color is incorrect');
+            });
+
+            it(`text is aligned to the ${controlBarData.btnTextAlign}`, function () {
+                const align = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'text-align').value;
+                assert.equal(align, controlBarData.btnTextAlign, `Cancel button text is not aligned to the ${controlBarData.btnTextAlign}`);
+            });
+
+            it(`hover background color is ${controlBarData.cancelBtnHoverBackgroundColor}`, function () {
+                browser.moveToObject(controlBarLocator.cancelBtnEdit);
+                browser.pause(2000);
+                const hoverBackgroundColor = browser.getCssProperty(controlBarLocator.cancelBtnEdit, 'background-color').parsed.hex;
+                assert.equal(hoverBackgroundColor, controlBarData.cancelBtnHoverBackgroundColor, 'Cancel button hover background color is incorrect');
+            });
+
+            it('is active', function () {
+                const isEnabled = browser.isEnabled(controlBarLocator.cancelBtnEdit);
+                assert.isTrue(isEnabled, 'Cancel button is not active');
+            });
+        })
     })
 });

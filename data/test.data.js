@@ -175,7 +175,7 @@ module.exports = {
         btnFontColor: '#ffffff',
         btnTextAlign: 'center',
 
-        cancelBtnBackGroundColor: '#17a2b8',
+        cancelBtnBackgroundColor: '#17a2b8',
         cancelBtnHoverBackgroundColor: '#138496',
     },
 
