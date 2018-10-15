@@ -72,8 +72,8 @@ describe('Bug Report Disabled State', function () {
         it('Verify that value displays like a link, and redirects to same web address', function () {
             browser.url('/');
             browser.waitForVisible(locator.email, 1000);
-            browser.setValue(locator.email, 'testingtest@gmail.com');
-            browser.setValue(locator.password, 'test123');
+            browser.setValue(locator.email, 'tester@test.com');
+            browser.setValue(locator.password, 'test');
             browser.click(locator.loginButton);
             browser.waitForVisible(locator.allIssues, 1000);
             browser.click(locator.allIssues);
