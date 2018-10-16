@@ -1,5 +1,5 @@
 exports.config = {
- 
+
     specs: [
         './test/client.js',
         './test/global-header.js',

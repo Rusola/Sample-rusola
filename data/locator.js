@@ -50,7 +50,7 @@ module.exports = {
         versionDropDownPlaceHolder: '#version .Dropdown-placeholder',
         requiredFieldText: '.text-sm-left'
     },
-    
+
     navigationBar: {
         newBugButton: '#new_bug',
         allIssuesButton: '#all_issues',
@@ -67,17 +67,17 @@ module.exports = {
     },
 
     bugReportFormDisabledState: {
-        chooseBug: 'span.text-left=Wrong text in Global Footer',
+        bugTitle: '#bug',
         bugReportDisbForm: '.badge',
-        attachment: 'a',
-        textArea: '.text-area',
-        titleFont: '.text-bold=Summary:',
-        valueFont: 'span.text-gray=Medium',
+        attachment: '#attach_link',
+        textArea: '#str_value',
+        titleFont: '#summary_title',
+        valueFont: '#summary_value',
         email: '#email',
         password: '#pass',
         loginButton: '#login',
         allIssues: '#all_issues',
-        bugSummary: 'tbody span'
+        bugSummary: '#summary'
     },
 
     commentsModule: {
@@ -145,16 +145,6 @@ module.exports = {
         footerText: 'body .custom-footer',
     },
 
-    bugReportFormDisabledState: {
-        titleFont: '.text-bold=Summary:',
-        valueFont: 'span.text-gray=Medium',
-        email: '#email',
-        password: '#pass',
-        loginButton: '#login',
-        allIssues: '#all_issues',
-        bugSummary: 'tbody span'
-    },
-
     bugReportTitles: {
         summary: '#summary_title',
         stepsToRep: '#str_title',
@@ -180,7 +170,7 @@ module.exports = {
         bugReportForm: '#bug-form',
         logoutButton: '#logout',
     },
-  
+
     controlBarFunctionality: {
         bugReportFormDisabled: '#bug_report_disabled',
         bugReportFormEdit: '#edit-mode-form',
