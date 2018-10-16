@@ -16,23 +16,25 @@ module.exports = {
         textAlign: "center"
     },
 
-    loginFunctionality: {
-        errorDesignBackgroundColor: 'rgba(248,215,218,1)',
-        errorDesignBorderColor: 'rgb(245,198,203)',
-        errorDesignFontFamily: 'segoe ui',
-        errorDesignFontSize: '16px',
-        errorDesignFontWeight: '400',
-        errorDesignTextAlign: 'center',
-        errorDesignFontColor: 'rgba(114,28,36,1)'
-    },
-
     loginPage: {
         emailPlaceholderText: "Email *",
         emailFieldFontSize: "16px",
         emailFieldFontWeight: "400",
         emailFieldFontFamily: "segoe ui",
         emailFieldFontColor: "#495057",
-        emailFieldFocusColor: "#80bdff"
+        emailFieldFocusColor: "#80bdff",
+
+        loginButtonFontSize: "16px",
+        loginButtonFontWeight: "400",
+        loginButtonFontFamily: "segoe ui",
+        loginButtonFontColor: "#ffffff",
+        loginButtonColor: "#17a2b8",
+
+        loginButtonFocusColor: "#138496" //hover background-color
+
+        //Verify that login button with text “Login”, middle-left aligned
+
+
     },
 
     user: {
@@ -47,7 +49,14 @@ module.exports = {
         noLoginOrPassError: 'Specify email and password',
         wrongLoginError: 'User with this email does not exist',
         wrongPasswordError: 'Password is incorrect',
-        oneChar: 'A'
+        oneChar: 'A',
+        errorDesignBackgroundColor: 'rgba(248,215,218,1)',
+        errorDesignBorderColor: 'rgb(245,198,203)',
+        errorDesignFontFamily: 'segoe ui',
+        errorDesignFontSize: '16px',
+        errorDesignFontWeight: '400',
+        errorDesignTextAlign: 'center',
+        errorDesignFontColor: 'rgba(114,28,36,1)'
     },
 
     bugReportFormDisabledState: {
@@ -76,9 +85,20 @@ module.exports = {
         fontFamily: 'segoe ui',
         fontWeight: '400',
         tagTextArea: 'textarea',
+        tagSpan: 'span',
         summaryArray: [
             'Summary:',
-            'Steps to Reproduce:'
+            'Steps to Reproduce:',
+            'Actual Result:',
+            'Expected result:',
+            'Attachment:',
+            'Assignee:',
+            'Reporter:',
+            'Version:',
+            'Priority:',
+            'Severity:',
+            'Repro:',
+            'Comments:'
         ]
     },
 
@@ -111,7 +131,9 @@ module.exports = {
         navBarFontWeight: "400",
         navBarButtonsFontColor: "rgba(255,255,255,1)",
         BackgroundColor1: "rgba(23,162,184,1)",
-        BackgroundColor2: "rgba(108,117,125,1)"
+        BackgroundColor2: "rgba(108,117,125,1)",
+        HoverBackgroundColor1: "rgba(19,132,150,1)",
+        HoverBackgroundColor2: "rgba(90,98,104,1)"
     },
 
     globalFooter: {
@@ -123,16 +145,76 @@ module.exports = {
         fontColor: "#212529"
     },
 
+    bugReportFormDisabledState: {
+        fontWeight: "700",
+        fontFamily: "segoe ui",
+        fontSize: "16px",
+        fontColor: "rgba(33,37,41,1)",
+        fontWeightValue: "400",
+        fontFamilyValue: "segoe ui",
+        fontSizeValue: "16px",
+        fontColorValue: "rgba(0,0,0,0.49)"
+    },
+
     newBugReportPage: {
         fontFamily: 'segoe ui',
         fontSize: '16px',
         fontWeight: '400',
         fontColor: 'rgba(73,80,87,1)',
         textAlignStart: 'start',
-        textAlignLeft: 'left'
+        textAlignLeft: 'left',
+        fontColorRf: 'rgba(33,37,41,1)',
+        textAlign: 'start',
+        textAlign1: 'left',
+        placeholder: ['Summary *', 'Steps to reproduce *', 'Actual result *', 'Expected result *', 'Attachment link',
+            'Assignee *', 'Priority *', 'Severity *', 'Repro *', 'Version']
+    },
 
+    bugList: {
+        bugSummaryTitle: 'Bug Summary',
+        bugPriorityTitle: 'Priority',
+        bugStatusTitle: 'Status',
+        bugReporterTitle: 'Reporter',
+        textAlignHeader: 'center',
+        fontSizeHeader: '16px',
+        fontWeightHeader: '700',
+        fontFamilyHeader: 'segoe ui',
+        fontColorHeader: '#212529',
+        textAlignSummary: 'left',
+        fontColorSummary: '#007bff',
+        fontWeightSummary: '400',
+        fontFamilySummary: 'segoe ui',
+        fontSizeSummary: '16px',
+        textAlignPriority: 'center',
+        fontColorPriority: '#212529',
+        fontWeightPriority: '400',
+        fontFamilyPriority: 'segoe ui',
+        fontSizePriority: '16px',
+        textAlignStatus: 'center',
+        fontColorStatus: '#212529',
+        fontWeightStatus: '400',
+        fontFamilyStatus: 'segoe ui',
+        fontSizeStatus: '16px',
+        textAlignReporter: 'center',
+        fontColorReporter: '#212529',
+        fontWeightReporter: '400',
+        fontFamilyReporter: 'segoe ui',
+        fontSizeReporter: '16px'
+    },
+
+    commentsModule: {
+        fontFamily: 'segoe ui',
+        fontSize: '16px',
+        fontWeight: '400',
+        titleFontWeight: '700',
+        fontColor: '#212529',
+        textAlign: 'left',
+        commTitle: 'Comments:',
+        noCommentsTitle: 'No comments'
+    },
+
+    controlBarFunctionality: {
+        editButtonName: 'Edit',
+        submitButtonName: 'Submit'
     }
-
 };
-
-
