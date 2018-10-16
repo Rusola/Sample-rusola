@@ -159,6 +159,17 @@ module.exports = {
             'Assignee *', 'Priority *', 'Severity *', 'Repro *', 'Version']
     },
 
+    bugReportPageControlBar: {
+        btnFontFamily: 'segoe ui',
+        btnFontSize: '16px',
+        btnFontWeight: '400',
+        btnFontColor: '#ffffff',
+        btnTextAlign: 'center',
+
+        cancelBtnBackgroundColor: '#17a2b8',
+        cancelBtnHoverBackgroundColor: '#138496',
+    },
+
     bugList: {
         bugSummaryTitle: 'Bug Summary',
         bugPriorityTitle: 'Priority',
