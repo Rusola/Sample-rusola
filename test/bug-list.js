@@ -6,18 +6,18 @@ const locator = require('../data/locator');
 
         it('Open Bug List Page from Navigation Bar on Bug Report Form', function () {
             browser.url('/');
-            browser.waitForVisible(locator.loginPage.email,5000);
+            browser.waitForVisible(locator.loginPage.email, 5000);
             browser.setValue(locator.loginPage.email,'tester@test.com');
             browser.setValue(locator.loginPage.password,'test');
             browser.click(locator.loginPage.loginButton);
-            browser.waitForVisible(locator.navigationBar.allIssuesButton,5000);
+            browser.waitForVisible(locator.navigationBar.allIssuesButton, 5000);
             browser.click(locator.navigationBar.allIssuesButton);
             let bugListVisible = browser.isVisible(locator.bugList.bodyBugList);
             assert.isTrue(bugListVisible, 'Bug List NOT Visible');
         });
 
         it('Table has the Header', function () {
-            browser.waitForVisible(locator.bugList.bodyTable,3000);
+            browser.waitForVisible(locator.bugList.bodyTable, 3000);
             let headerTableVisible = browser.isVisible(locator.bugList.headerTable);
             assert.isTrue(headerTableVisible, 'Header table NOT Visible');
         });

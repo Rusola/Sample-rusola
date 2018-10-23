@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "rm -rf reports mochawesome-report errorShots && wdio wdio.conf.js",
-    "report": "marge ./reports/wdiomochawesome.json --autoOpen --reportFilename ./report.html --reportDir ./mochawesome-report"
+    "report": "marge ./reports/wdiomochawesome.json --autoOpen --reportFilename ./report.html --reportDir ./mochawesome-report",
+    "rapi": "./node_modules/mocha/bin/mocha rest_api/restApi.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "webdriverio": "^4.13.2"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "npm": "^6.4.1"
   }
 }

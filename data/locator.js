@@ -110,7 +110,6 @@ module.exports = {
     textPriority: 'tbody #priority',
     textStatus: 'tbody #status',
     textReporter: 'tbody #reporter'
-
   },
 
   bugReportEditMode: {
@@ -142,7 +141,7 @@ module.exports = {
 
   globalFooter: {
     footer: '.custom-footer',
-    footerText: 'body .custom-footer',
+    footerText: 'body .custom-footer'
   },
 
   bugReportTitles: {
