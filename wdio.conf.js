@@ -1,21 +1,11 @@
 exports.config = {
 
     specs: [
-        './test/client.js',
-        './test/global-header.js',
-        './test/login-functionality.js',
-        './test/bug-report-form-edit-mode.js',
-        './test/registration-functionality.js',
-        './test/navigation-bar.js',
-        './test/global-footer.js',
-        './test/new-bug-report-page.js',
-        './test/bug-report-form-disabled-state.js',
-        './test/bug-list.js',
-        './test/login.js',
-        './test/comments.js',
-        './test/logout.js',
-        './test/control-bar-functionality.js',
-        './test/bug-report-page-control-bar.js'
+        './test/homePage.links.js',
+        //'./test/loginPO.test.js',
+         './test/homePage.gui.js',
+        //'./test/mainPageCss.js',
+        './test/brochureUrl.axios.js'
     ],
 
     exclude: [
@@ -57,17 +47,18 @@ exports.config = {
 
     screenshotPath: './errorShots/',
 
-    baseUrl: 'https://reactbugtracker.com/',
+    baseUrl: 'https://focusschoolsoftware.com/',
 
-    waitforTimeout: 10000,
+    waitforTimeout: 1000,
 
-    connectionRetryTimeout: 90000,
+    connectionRetryTimeout: 9000,
 
     connectionRetryCount: 3,
 
     services: ['selenium-standalone'],
 
     framework: 'mocha',
+
 
     reporters: ['dot', 'spec', 'mochawesome'],
     reporterOptions: {
@@ -79,7 +70,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        //timeout: 20000
     },
 
     // =====

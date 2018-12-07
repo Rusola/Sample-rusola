@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "node-fetch": "^2.3.0",
     "npm": "^6.4.1"
   }
 }

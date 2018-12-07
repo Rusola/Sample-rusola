@@ -1,10 +1,10 @@
 const assert = require('chai').assert;
 const data = require('../data/test.data').loginPage;
-const locator = require('../data/locator').loginPage;
+const locator = require('../data/locator');
 
-describe('Login button', function () {
+describe('"OUR SERVICE" button', function () {
 
-    it('Login button is visible', function () {
+    it('"Our SERVICE" button is visible', function () {
         browser.url('/');
         browser.waitForVisible(locator.loginButton);
         let loginButton = browser.isVisible(locator.loginButton);
