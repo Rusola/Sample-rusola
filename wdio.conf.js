@@ -1,11 +1,11 @@
 exports.config = {
 
     specs: [
-        './test/homePage.links.js',
+        //'./test/homePage.links.js',
         //'./test/loginPO.test.js',
-         './test/homePage.gui.js',
+         './test/homePage.gui.js'
         //'./test/mainPageCss.js',
-        './test/brochureUrl.axios.js'
+        //'./test/brochureUrl.axios.js'
     ],
 
     exclude: [
@@ -49,7 +49,7 @@ exports.config = {
 
     baseUrl: 'https://focusschoolsoftware.com/',
 
-    waitforTimeout: 1000,
+    waitforTimeout: 20000,
 
     connectionRetryTimeout: 9000,
 

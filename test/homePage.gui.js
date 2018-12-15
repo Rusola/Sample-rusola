@@ -59,33 +59,43 @@ describe(`Main Page`, function () {
         assert.isTrue(isSrvBtnVisible, '"Our SERVICE" button is NOT Visible');
     });
     it('"WATCH VIDEO" button is visible', function () {
-        let isWtchBtnVisible = browser.isVisible(locator.button2);
-        assert.isTrue(isWtchBtnVisible, '"WATCH VIDEO" button is NOT Visible');
+        let isWtchBtnVisible = !browser.waitForVisible(locator.button2);
+        //assert.isTrue(isWtchBtnVisible, '"WATCH VIDEO" button is NOT Visible');
     });
 
-    it('Checking if the video has the correct src', function () {
-        browser.newWindow(data.videoFrame);
-        let url = browser.getAttribute('iframe','src');
-        assert.equal(url, data.videoSrc, 'Video resource is wrong');
+    it.only(`should wait for checkbox to be removed`, () => {
+        browser.url(`https://the-internet.herokuapp.com/dynamic_controls`);
+
+        $(`#checkbox-example button`).click();
+
+        browser.waitUntil(() => {
+            return !$(`#checkbox-example`).isExisting();
+        });
     });
 
-    // it('switch 2', function () {
-    //     browser.waitForExist('iframe');
-    //     //var my_frame = $('iframe').value;
-    //
-    //     browser.frame(0); // this line is important to switch to the iframe
-    //     let button = $$('polygon.fill')[0];
-    //     button.click();
-    //     //browser.switchTab('http://webdriver.io/api/window/switchTab.html#Usage');
-    //
-    //     assert.isTrue(true);
-    // });
+        // it('Checking if the video has the correct src', function () {
+        //     browser.newWindow(data.videoFrame);
+        //     let url = browser.getAttribute('iframe','src');
+        //     assert.equal(url, data.videoSrc, 'Video resource is wrong');
+        // });
 
-    // it('Global Footer Visible', function () {
-    //     let footerVisible = browser.isVisible(locator.footer);
-    //     assert.isTrue(footerVisible, 'Global Footer NOT Visible');
-    // });
+        // it('switch 2', function () {
+        //     browser.waitForExist('iframe');
+        //     //var my_frame = $('iframe').value;
+        //
+        //     browser.frame(0); // this line is important to switch to the iframe
+        //     let button = $$('polygon.fill')[0];
+        //     button.click();
+        //     //browser.switchTab('http://webdriver.io/api/window/switchTab.html#Usage');
+        //
+        //     assert.isTrue(true);
+        // });
 
-});
+        // it('Global Footer Visible', function () {
+        //     let footerVisible = browser.isVisible(locator.footer);
+        //     assert.isTrue(footerVisible, 'Global Footer NOT Visible');
+        // });
+
+    });
 
 //}
