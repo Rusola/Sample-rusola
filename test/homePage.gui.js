@@ -63,7 +63,7 @@ describe(`Main Page`, function () {
         //assert.isTrue(isWtchBtnVisible, '"WATCH VIDEO" button is NOT Visible');
     });
 
-    it.only(`should wait for checkbox to be removed`, () => {
+    it(`should wait for checkbox to be removed`, () => {
         browser.url(`https://the-internet.herokuapp.com/dynamic_controls`);
 
         $(`#checkbox-example button`).click();

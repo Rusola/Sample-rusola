@@ -3,8 +3,9 @@ exports.config = {
     specs: [
         //'./test/homePage.links.js',
         //'./test/loginPO.test.js',
-         './test/homePage.gui.js'
+        // './test/homePage.gui.js'
         //'./test/mainPageCss.js',
+        './test/brokenImg.test.js',
         //'./test/brochureUrl.axios.js'
     ],
 
@@ -123,7 +124,7 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    // beforeTest: function (test) {
+    // beforetest: function (test) {
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
@@ -141,7 +142,7 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) ends.
      * @param {Object} test test details
      */
-    // afterTest: function (test) {
+    // aftertest: function (test) {
     // },
     /**
      * Hook that gets executed after the suite has ended
